@@ -252,9 +252,9 @@ h2 .tag { display: inline-block; width: 40px; height: 40px; border-radius: 8px; 
 
 /* S18 closing: navy text panel left, tall photo right */
 .s-close { background: var(--ink); }
-.s-close .bg { position: absolute; top: 0; bottom: 0; right: 0; width: 700px; }
+.s-close .bg { position: absolute; top: 0; bottom: 0; right: 0; width: 1000px; }
 .s-close .bg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
-.s-close .bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--ink) 0%, rgba(16,21,74,0) 22%), linear-gradient(180deg, rgba(16,21,74,.55) 0%, rgba(16,21,74,0) 12%); }
+.s-close .bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--ink) 0%, rgba(16,21,74,.55) 9%, rgba(16,21,74,0) 24%), linear-gradient(180deg, rgba(16,21,74,.55) 0%, rgba(16,21,74,0) 12%); }
 .s-close .bg .log { left: auto; right: 24px; bottom: 24px; }
 .s-close .body { position: absolute; left: 96px; top: 190px; width: 1060px; color: #fff; display: grid; gap: 26px; }
 .s-close .body .eyebrow { color: var(--signal); }
@@ -587,7 +587,7 @@ body.editing #notes .edit-notes { outline: 2px dashed rgba(255,91,31,.55); paddi
 
 <!-- 18 마무리 -->
 <section class="slide s-close dark" data-note="close" data-m="11">
-  <div class="bg"><img src="assets/closing_sky.jpg" alt="밀짚모자를 쓴 부원들과 트레이너가 하늘을 나는 기체를 올려다보는 모습"><div class="log"><b>실비행</b><i>2026.08.13</i></div></div>
+  <div class="bg"><img src="assets/closing_sky.jpg" alt="밀짚모자를 쓴 부원들과 트레이너가 하늘을 나는 기체를 올려다보는 모습"></div>
   <div class="body anim">
     <div class="eyebrow">비틀즈 선후배 간담회</div>
     <h2>선배님들 이야기를<br>들어볼 시간입니다</h2>
