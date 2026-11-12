@@ -217,11 +217,20 @@ h2 .tag { display: inline-block; width: 40px; height: 40px; border-radius: 8px; 
 .steps .chip { justify-self: start; margin-top: 10px; }
 
 /* V-173 real photo */
-.real { display: grid; grid-template-columns: 900px 1fr; gap: 32px; }
+.real { display: grid; grid-template-columns: 1011px 1fr; gap: 32px; }
 .real .side { display: grid; grid-template-rows: 380px auto; gap: 22px; align-content: start; }
 .real ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .real li { font-size: 32px; font-weight: 800; color: var(--ink); display: flex; gap: 14px; align-items: baseline; word-break: keep-all; }
 .real li::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--signal); flex: none; transform: translateY(-4px); }
+
+/* thanks to seniors */
+.thanks3 { display: grid; grid-template-columns: 1.35fr 1fr; grid-template-rows: 1fr 1fr; gap: 18px; }
+.thanks3 .big { grid-row: 1 / 3; }
+/* scale model with full photo */
+.scale2 { display: grid; grid-template-columns: 426px 1fr; gap: 28px; }
+.scale2 .rt { display: grid; grid-template-rows: 330px 1fr; gap: 18px; }
+.scale2 .runs { grid-template-columns: 1fr; gap: 14px; }
+.scale2 .run { padding: 18px 26px; }
 
 /* S16 fall steps */
 .quad { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 22px; }
@@ -309,7 +318,7 @@ h2 .tag { display: inline-block; width: 40px; height: 40px; border-radius: 8px; 
       <div class="bar navy" style="grid-column: 2 / span 3"><strong>동아리 대회 기체 제작</strong><span>5/30 대전드론공원</span></div>
       <div class="bar" style="grid-column: 2 / span 4"><strong>UAM 올림피아드</strong><span>기체창작 부문 · 예선</span></div>
       <div class="bar" style="grid-column: 6 / span 2"><strong>조종 교육 · 3D 설계</strong></div>
-      <div class="bar" style="grid-column: 8 / span 3"><strong>2학기 설계 교육</strong><span>비정기 실비행 계획</span></div>
+      <div class="bar" style="grid-column: 8 / span 3"><strong>2학기 설계 교육</strong><span>비정기 실비행</span></div>
       <div class="bar now" style="grid-column: 10 / span 1"><strong>간담회</strong></div>
     </div>
     <div class="thumbs">
@@ -380,41 +389,33 @@ h2 .tag { display: inline-block; width: 40px; height: 40px; border-radius: 8px; 
   </div>
 </section>
 
-<!-- 06 심사 기준 -->
-<section class="slide" data-note="rubric" data-m="5">
-  <div class="head anim"><div class="eyebrow">5월 30일 · 대전드론공원</div><h2>동아리 대회 심사 기준</h2><p class="lede">2026 동아리 대회 학술 및 비행 심사지에서</p></div>
-  <div class="area split anim d2">
-    <div class="rubric">
-      <h4>학술 심사 (일부)</h4>
-      <div><span>팀원도 만든 기체에 대해 알고 있는가?</span><b>15점</b></div>
-      <div><span>주익과 미익에 붙임각을 왜 넣었는가?</span><b>10점</b></div>
-      <div><span>항공기 안정성에 대하여 알고 있는가?</span><b>10점</b></div>
-      <h4>비행 심사 (100점)</h4>
-      <div><span>이륙하였는가?</span><b>20점</b></div>
-      <div><span>안정적인 비행을 하였는가?</span><b>50점</b></div>
-      <div class="hl"><span>얼마나 멀쩡하게 돌아왔는가?</span><b>30점</b></div>
-    </div>
-    <figure class="ph"><img src="assets/contest_cheer.jpg" alt="비행을 보며 환호하는 부원들" style="object-position: 60% 45%"><div class="log"><b>오후</b><i>비행 관람</i></div></figure>
+<!-- 선배님 감사 -->
+<section class="slide" data-note="thanks" data-m="5">
+  <div class="head anim"><div class="eyebrow">Special Thanks · 5월 30일 동아리 대회</div><h2>와 주신 선배님들께 감사드립니다</h2><p class="lede">학술 심사 · 비행 심사 · 시상을 함께해 주셨습니다</p></div>
+  <div class="area thanks3 anim d2">
+    <figure class="ph big"><img src="assets/contest_judging.jpg" alt="천막 아래에서 진행된 학술 심사" style="object-position: 45% 60%"><div class="log"><b>오전</b><i>학술 심사</i></div></figure>
+    <figure class="ph"><img src="assets/contest_award2.jpg" alt="선배님이 수상 팀원과 악수하는 시상 장면" style="object-position: 50% 40%"><div class="log"><b>오후</b><i>시상</i></div></figure>
+    <figure class="ph"><img src="assets/contest_award.jpg" alt="선배님이 부원에게 상품을 건네는 시상 장면" style="object-position: 50% 35%"><div class="log"><b>오후</b><i>시상</i></div></figure>
   </div>
 </section>
 
 <!-- 07 디브리핑 -->
 <section class="slide" data-note="debrief" data-m="6">
-  <div class="head anim"><div class="eyebrow">1학기 종강 총회</div><h2>동아리 대회 디브리핑</h2><p class="lede">팀별 디브리핑 발표 자료에서</p></div>
+  <div class="head anim"><div class="eyebrow">1학기 종강 총회</div><h2>동아리 대회 디브리핑</h2><p class="lede">팀별 디브리핑 발표 자료 원문에서</p></div>
   <div class="area deb anim d2">
     <div class="th">팀</div><div class="th">문제점 및 원인</div><div class="th">개선점</div>
     <div class="td tm"><i style="background: var(--t-htail)"></i>H-tail</div>
-    <div class="td"><span>비행 중 주익 스파 파손<small>스파 연결부 상반각(3°) 미반영</small></span></div>
-    <div class="td fix">에일러론 팁 정렬 · 미익 에어포일화 · 서보 박스</div>
+    <div class="td"><span>비행 중 주익 스파 파손<small>스파 연결부에 주익 상반각(3°) 미반영</small></span></div>
+    <div class="td fix">에일러론 팁 맞추기 · 미익 평판을 에어포일처럼 · 서보는 박스로</div>
     <div class="td tm"><i style="background: var(--t-taper)"></i>테이퍼익</div>
-    <div class="td"><span>주익 연결부 카본 파이프 크랙<small>비행 후 점검 중 발견</small></span></div>
-    <div class="td fix">연결부 내구도 보강 · 리브 수직 정렬</div>
+    <div class="td"><span>주익 내구도 부족으로 곡예비행 생략<small>비행 후 주익 연결부 카본 크랙 발견</small></span></div>
+    <div class="td fix">주익 연결부 카본 내구도 · 리브 수직 · 수평미익 서보 배치(토크)</div>
     <div class="td tm"><i style="background: var(--t-canard)"></i>전진익 카나드</div>
     <div class="td"><span>카나드 타각 부족 · 피치 업 불가<small>조종사 피드백</small></span></div>
-    <div class="td fix">샤프트 칼라 간섭 개선 · 칼라 접착 고정</div>
+    <div class="td fix">풀무빙이어도 타각 적당하게 · 샤프트 칼라 간섭 개선 · 칼라 접착 고정</div>
     <div class="td tm"><i style="background: var(--t-gull)"></i>역갈매기</div>
-    <div class="td"><span>롤 기동 불안정 · 엘리베이터 타면력 부족<small>조종기 주파수 간섭으로 수신 불량</small></span></div>
-    <div class="td fix">상반각·조종면 대칭 개선 · 엘리베이터 면적 증가</div>
+    <div class="td"><span>롤 기동 불안정 · 루프 시 엘리베이터 타면력 부족<small>조종기 주파수 간섭으로 수신 불량</small></span></div>
+    <div class="td fix">상반각·조종면 대칭 · 엘리베이터 면적 증가 · CG용 적재 공간</div>
   </div>
 </section>
 
@@ -435,11 +436,14 @@ h2 .tag { display: inline-block; width: 40px; height: 40px; border-radius: 8px; 
 <!-- 09 축소기 -->
 <section class="slide" data-note="scale" data-m="5,6">
   <div class="head anim"><div class="eyebrow">UAM 올림피아드 기체창작 부문</div><h2>축소기 비행 시험</h2></div>
-  <div class="area hi scale anim d2">
-    <figure class="ph"><img src="assets/uam_scale1.jpg" alt="노란색 1/12 순항 검증용 축소기" style="object-position: 50% 50%"><div class="log"><b>실물</b><i>1/12 순항 검증용 축소기</i></div></figure>
-    <div class="runs">
-      <div class="run"><b>1차 비행</b><strong>비행 실패</strong><span>추력선과 CG 이격으로 pitch 불안정 → 추력선 +10° · 미익 볼륨비 개선</span></div>
-      <div class="run ok"><b>2차 비행</b><strong>비행 일부 성공</strong><span>기본 조종성 및 로그 확보 · yaw 조종성 부족 → 해결 방안: V-tail 상반각 25° → 30°</span></div>
+  <div class="area hi scale2 anim d2">
+    <figure class="ph"><img src="assets/uam_stand.jpg" alt="받침대 위의 노란색 1/12 순항 검증용 축소기 전체 모습" style="object-position: 50% 55%"><div class="log"><b>실물</b><i>1/12 축소기</i></div></figure>
+    <div class="rt">
+      <figure class="ph"><img src="assets/uam_flight.jpg" alt="하늘을 나는 노란색 축소기" style="object-position: 50% 42%; transform: scale(2.1); transform-origin: 50% 42%"><div class="log"><b>비행</b><i>1/12 순항 검증용 축소기</i></div></figure>
+      <div class="runs">
+        <div class="run"><b>1차 비행</b><strong>비행 실패</strong><span>추력선과 CG 이격으로 pitch 불안정 → 추력선 +10° · 미익 볼륨비 개선</span></div>
+        <div class="run ok"><b>2차 비행</b><strong>비행 일부 성공</strong><span>기본 조종성 및 로그 확보 · yaw 조종성 부족 → 해결 방안: V-tail 상반각 25° → 30°</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -526,14 +530,14 @@ h2 .tag { display: inline-block; width: 40px; height: 40px; border-radius: 8px; 
 <section class="slide" data-note="real" data-m="9,10,11">
   <div class="head anim"><div class="eyebrow">3D 설계팀 · 2026.11.12</div><h2>V-173 기반 기체 실물</h2></div>
   <div class="area hi real anim d2">
-    <figure class="ph"><img src="assets/v173_real.jpg" alt="3D 프린팅으로 만든 원반형 V-173 기반 기체에 모터 두 개를 단 모습" style="object-position: 50% 50%"><div class="log"><b>실물</b><i>2026.11.12 · 조립 중</i></div></figure>
+    <figure class="ph"><img src="assets/v173_real.jpg" alt="위에서 본 3D 프린팅 원반형 V-173 기반 기체, 모터 두 개와 꼬리 서보를 단 모습" style="object-position: 50% 50%"><div class="log"><b>실물</b><i>2026.11.12</i></div></figure>
     <div class="side">
       <figure class="ph contain"><img src="assets/v173_render.jpg" alt="V-173 기반 원반형 설계 모델"><div class="log model"><b>설계 모델</b><i>Shapr3D</i></div></figure>
       <div>
         <ul>
           <li>3D 프린팅 원반형 주익 · 동체</li>
-          <li>쌍수직미익 · 수평미익 장착</li>
-          <li>모터 2개 장착 · 배선 정리 중</li>
+          <li>쌍수직미익 · 수평미익 · 서보 장착</li>
+          <li>모터 2개 장착</li>
         </ul>
         <div style="margin-top: 22px"><span class="chip wip">출력 · 조립 진행 중</span></div>
       </div>
@@ -562,15 +566,15 @@ h2 .tag { display: inline-block; width: 40px; height: 40px; border-radius: 8px; 
       <div class="work"><div class="img"><img class="cad" src="assets/tv_conv.jpg" alt="고익 컨벤셔널 삼면도"></div><div class="t"><strong>고익 컨벤셔널</strong><span>유사 기체 Cessna-172 · 이준오</span></div></div>
     </div>
   </div>
-  <div class="flybar anim d2"><strong>조종 교육</strong><span>방학 미참여자 및 추가 희망자 대상 비정기 실비행 계획 (9월 말 · 10월 중순 · 11월 초)</span></div>
+  <div class="flybar anim d2"><strong>조종 교육</strong><span>방학 미참여자 및 추가 희망자 대상 비정기 실비행 진행</span></div>
 </section>
 
 <!-- 18 마무리 -->
 <section class="slide s-close dark" data-note="close" data-m="11">
   <div class="bg"><img src="assets/summer_field.jpg" alt="여름 실비행 때 트레이너와 함께 비행을 준비하는 부원들"></div>
   <div class="body anim">
-    <div class="eyebrow">오늘</div>
-    <h2>비틀즈 선후배 간담회</h2>
+    <div class="eyebrow">비틀즈 선후배 간담회</div>
+    <h2>선배님들 이야기를 들어볼 시간입니다</h2>
     <p class="lede">선배님들 현업 및 경험 이야기</p>
     <ol>
       <li>대학 시절 관심 분야와 진로 선택 과정</li>
@@ -596,8 +600,8 @@ const NOTES = {
   teams3: ["테이퍼 주익 저익기를 만든 테이퍼익 팀입니다."],
   teams4: ["수평 꼬리 양 끝에 수직 꼬리를 단 H-tail 팀입니다. 오른쪽은 각 팀이 그린 삼면도입니다."],
   contest: ["대회는 5월 30일 대전드론공원에서 했습니다. 오전에는 학술 심사, 오후에는 비행 심사를 했습니다."],
-  rubric: ["학술 심사에서는 팀장뿐 아니라 팀원도 기체를 알고 있는지 봤고, 비행 심사에는 '얼마나 멀쩡하게 돌아왔는가' 항목도 넣었습니다."],
-  debrief: ["대회 끝나고 종강 총회 때 팀별로 디브리핑을 했습니다.", "H-tail 팀은 비행 중 주익 스파가 부러졌는데, 스파 연결부에 상반각을 안 넣은 게 원인이었습니다. 테이퍼익 팀은 비행 후 점검에서 주익 연결부 카본 크랙을 찾았습니다.", "전진익 카나드 팀은 카나드 타각 부족, 역갈매기 팀은 롤 불안정과 엘리베이터 타면력 부족을 꼽았고, 각자 개선점을 정리했습니다."],
+  thanks: ["대회 날 선배님들께서 와 주셔서 학술 심사와 비행 심사, 시상까지 함께해 주셨습니다. 이 자리를 빌려 다시 한번 감사드립니다."],
+  debrief: ["대회 끝나고 종강 총회 때 팀별로 디브리핑을 했습니다. 화면은 각 팀 발표 자료에 적힌 내용 그대로입니다.", "H-tail 팀은 비행 중 주익 스파가 부러졌는데, 스파 연결부에 상반각을 안 넣은 게 원인이었습니다. 테이퍼익 팀은 주익 내구도 때문에 곡예비행을 못 했고, 비행 후 연결부 카본에서 크랙을 찾았습니다.", "전진익 카나드 팀은 카나드 타각 부족, 역갈매기 팀은 롤 불안정과 엘리베이터 타면력 부족을 꼽았습니다."],
   uam: ["UAM 올림피아드 기체창작 부문에도 비틀즈 팀 8명이 참가했습니다.", "청주공항이랑 대전 엑스포공원을 잇는 셔틀 임무를 잡고, 틸트로터 4개, 리프트로터 4개짜리 기체를 설계했습니다. 왼쪽이 설계 모델입니다."],
   scale: ["1/12 축소기도 만들었습니다. 1차 비행은 실패해서 추력선이랑 꼬리를 고쳤고, 2차 비행에서 기본 조종성이랑 로그를 확보했습니다. 방향 조종성은 부족해서 V-tail 각도를 키우는 쪽으로 정리했습니다.", "[확인 후 말하기] 아쉽게 본선까지는 못 갔습니다."],
   fly: ["여름방학에는 조종 교육을 했습니다. 시뮬레이터로 시작해서 비행 전 점검을 배우고, 트레이너랑 실비행까지 했습니다."],
@@ -606,10 +610,10 @@ const NOTES = {
   field: ["실비행 사진입니다. 트레이너 맡아 준 26기 배창효한테 고맙다는 말 전하고 싶습니다."],
   "3d": ["같은 기간에 3D 설계팀도 운영했습니다. Pico Talon 기반 기체랑 V-173 기반 원반형 기체, 두 개를 설계했습니다. 화면 그림은 설계 모델입니다."],
   print: ["기자재 배치, 무게중심, 출력 크기에 맞춘 분할까지 같이 다뤘습니다."],
-  real: ["그리고 이게 V-173 기반 기체 실물입니다. 11월 12일 기준 모습인데, 출력해서 조립하고 모터까지 달았고, 지금 배선 정리하고 있습니다."],
+  real: ["그리고 이게 V-173 기반 기체 실물입니다. 11월 12일 기준 모습인데, 출력해서 조립하고 모터랑 서보까지 달았습니다."],
   fall: ["2학기에는 설계 교육을 하고 있습니다. 방학 때는 형상 만들고 출력하는 데 집중했다면, 2학기는 설계 근거를 잡는 데 중점을 뒀습니다."],
-  works: ["부원들이 만든 설계안입니다. 조종은 방학에 못 나온 부원이랑 추가 희망자 대상으로 비정기 비행 일정도 잡아 두었습니다."],
-  close: ["올해는 기체 설계, 제작이랑 같이 부원들이 직접 조종하고 만들어 볼 수 있는 교육에 신경 썼습니다.", "이제 선배님들 이야기 듣고 싶습니다. 화면 주제는 참고만 해 주시고 편하게 말씀해 주시면 됩니다. 감사합니다."]
+  works: ["부원들이 만든 설계안입니다. 조종은 방학에 못 나온 부원이랑 추가 희망자 대상으로 2학기에도 비정기 비행을 나갔습니다."],
+  close: ["올해는 기체 설계, 제작이랑 같이 부원들이 직접 조종하고 만들어 볼 수 있는 교육에 신경 썼습니다.", "이제 선배님들 이야기를 들어볼 시간입니다. 화면 주제는 참고만 해 주시고 편하게 말씀해 주시면 됩니다. 감사합니다."]
 };
 
 const deck = document.getElementById("deck");
