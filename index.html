@@ -252,15 +252,15 @@ h2 .tag { display: inline-block; width: 40px; height: 40px; border-radius: 8px; 
 
 /* S18 closing */
 .s-close .bg { position: absolute; inset: 0; }
-.s-close .bg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
-.s-close .bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,15,51,.95) 0%, rgba(11,15,51,.88) 46%, rgba(11,15,51,.22) 74%, rgba(11,15,51,.06) 100%); }
-.s-close .body { position: absolute; left: 96px; top: 190px; width: 1040px; color: #fff; display: grid; gap: 30px; }
-.s-close h2 { color: #fff; font-size: 92px; }
-.s-close .lede { color: rgba(255,255,255,.92); font-size: 40px; }
-.s-close ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; counter-reset: q; }
-.s-close li { counter-increment: q; display: grid; grid-template-columns: 70px 1fr; gap: 16px; align-items: baseline; font-size: 40px; line-height: 1.35; font-weight: 700; word-break: keep-all; }
-.s-close li::before { content: "0" counter(q); font-weight: 900; color: var(--signal); font-size: 36px; }
-.s-close .thanks { position: absolute; left: 96px; bottom: 72px; display: flex; align-items: center; gap: 22px; color: #fff; font-size: 34px; font-weight: 800; }
+.s-close .bg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 14%; }
+.s-close .bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,15,51,.6) 0%, rgba(11,15,51,0) 13%, rgba(11,15,51,0) 42%, rgba(11,15,51,.88) 64%, rgba(11,15,51,.96) 100%); }
+.s-close .body { position: absolute; left: 96px; right: 96px; bottom: 150px; color: #fff; display: grid; gap: 18px; }
+.s-close h2 { color: #fff; font-size: 84px; }
+.s-close .lede { color: rgba(255,255,255,.92); font-size: 36px; }
+.s-close ol { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; counter-reset: q; }
+.s-close li { counter-increment: q; display: grid; grid-template-columns: 56px 1fr; gap: 12px; align-items: baseline; font-size: 32px; line-height: 1.35; font-weight: 700; word-break: keep-all; }
+.s-close li::before { content: "0" counter(q); font-weight: 900; color: var(--signal); font-size: 30px; }
+.s-close .thanks { position: absolute; left: 96px; bottom: 52px; display: flex; align-items: center; gap: 22px; color: #fff; font-size: 34px; font-weight: 800; }
 .s-close .thanks img { width: 92px; }
 
 /* presenter helpers */
@@ -584,7 +584,7 @@ body.editing #notes .edit-notes { outline: 2px dashed rgba(255,91,31,.55); paddi
 
 <!-- 18 마무리 -->
 <section class="slide s-close dark" data-note="close" data-m="11">
-  <div class="bg"><img src="assets/summer_field.jpg" alt="여름 실비행 때 트레이너와 함께 비행을 준비하는 부원들"></div>
+  <div class="bg"><img src="assets/contest_group.jpg" alt="동아리 대회 시상 뒤 선배님과 부원들이 상품과 기체를 들고 함께 찍은 사진"></div>
   <div class="body anim">
     <div class="eyebrow">비틀즈 선후배 간담회</div>
     <h2>선배님들 이야기를 들어볼 시간입니다</h2>
