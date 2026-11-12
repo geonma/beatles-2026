@@ -205,6 +205,13 @@ img.cad { filter: invert(1) hue-rotate(180deg) contrast(1.3); }
 .step span { font-size: 33px; font-weight: 800; }
 .steps .chip { justify-self: start; margin-top: 10px; }
 
+/* V-173 real photo */
+.real { display: grid; grid-template-columns: 900px 1fr; gap: 32px; }
+.real .side { display: grid; grid-template-rows: 380px auto; gap: 22px; align-content: start; }
+.real ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.real li { font-size: 32px; font-weight: 800; color: var(--ink); display: flex; gap: 14px; align-items: baseline; word-break: keep-all; }
+.real li::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--signal); flex: none; transform: translateY(-4px); }
+
 /* S16 fall steps */
 .quad { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 22px; }
 .qcard { background: var(--card); border-radius: 14px; padding: 30px 34px; display: grid; grid-template-columns: 84px 1fr; gap: 24px; align-items: center; }
@@ -299,7 +306,7 @@ img.cad { filter: invert(1) hue-rotate(180deg) contrast(1.3); }
       <figure class="ph"><img src="assets/contest_cheer.jpg" alt="비행을 보며 환호하는 부원들" style="object-position: 55% 45%"><div class="log"><b>동아리 대회</b></div></figure>
       <figure class="ph"><img src="assets/uam_scale1.jpg" alt="UAM 1/12 축소기"><div class="log"><b>UAM 축소기</b></div></figure>
       <figure class="ph"><img src="assets/summer_hats.jpg" alt="여름방학 실비행" style="object-position: 50% 78%"><div class="log"><b>조종 교육</b></div></figure>
-      <figure class="ph contain"><img src="assets/v173_render.jpg" alt="V-173 설계 모델"><div class="log model"><b>3D 설계 모델</b></div></figure>
+      <figure class="ph"><img src="assets/v173_real.jpg" alt="V-173 기반 기체 실물" style="object-position: 50% 55%"><div class="log"><b>V-173 실물</b></div></figure>
     </div>
   </div>
 </section>
@@ -481,7 +488,26 @@ img.cad { filter: invert(1) hue-rotate(180deg) contrast(1.3); }
       <div class="step"><b>3</b><span>기자재 배치 · CG 확인</span></div>
       <div class="step"><b>4</b><span>출력 크기 분할</span></div>
       <div class="step"><b>5</b><span>Bambu P1S 출력 · 조립</span></div>
-      <span class="chip wip">V-173 제작 진행 중</span>
+      <span class="chip wip">V-173 출력 · 조립 진행 중</span>
+    </div>
+  </div>
+</section>
+
+<!-- 16 V-173 실물 -->
+<section class="slide" data-note="real" data-m="9,10,11">
+  <div class="head anim"><div class="eyebrow">3D 설계팀 · 2026.11.12</div><h2>V-173 기반 기체 실물</h2></div>
+  <div class="area hi real anim d2">
+    <figure class="ph"><img src="assets/v173_real.jpg" alt="3D 프린팅으로 만든 원반형 V-173 기반 기체에 모터 두 개를 단 모습" style="object-position: 50% 50%"><div class="log"><b>실물</b><i>2026.11.12 · 조립 중</i></div></figure>
+    <div class="side">
+      <figure class="ph contain"><img src="assets/v173_render.jpg" alt="V-173 기반 원반형 설계 모델"><div class="log model"><b>설계 모델</b><i>Shapr3D</i></div></figure>
+      <div>
+        <ul>
+          <li>3D 프린팅 원반형 주익 · 동체</li>
+          <li>쌍수직미익 · 수평미익 장착</li>
+          <li>모터 2개 장착 · 배선 정리 중</li>
+        </ul>
+        <div style="margin-top: 22px"><span class="chip wip">출력 · 조립 진행 중</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -548,7 +574,8 @@ const NOTES = {
   edu: ["교안도 직접 만들었습니다. 주차별 교안이랑 입문 자료, 조종기 세팅 교육, 기록표까지 있고, 2인 1조로 역할을 나눠서 연습했습니다."],
   field: ["실비행 사진입니다. 트레이너 맡아 준 26기 배창효한테 고맙다는 말 전하고 싶습니다."],
   "3d": ["같은 기간에 3D 설계팀도 운영했습니다. Pico Talon 기반 기체랑 V-173 기반 원반형 기체, 두 개를 설계했습니다. 화면 그림은 설계 모델입니다."],
-  print: ["기자재 배치, 무게중심, 출력 크기에 맞춘 분할까지 같이 다뤘습니다.", "[확인 후 말하기] V-173은 지금도 제작 중입니다."],
+  print: ["기자재 배치, 무게중심, 출력 크기에 맞춘 분할까지 같이 다뤘습니다."],
+  real: ["그리고 이게 V-173 기반 기체 실물입니다. 오늘 찍은 사진인데, 출력해서 조립하고 모터까지 달았고, 지금 배선 정리하고 있습니다."],
   fall: ["2학기에는 설계 교육을 하고 있습니다. 방학 때는 형상 만들고 출력하는 데 집중했다면, 2학기는 설계 근거를 잡는 데 중점을 뒀습니다."],
   works: ["부원들이 만든 설계안입니다. 조종은 방학에 못 나온 부원이랑 추가 희망자 대상으로 비정기 비행을 잡아 두었습니다. [확인 후 말하기: 실제로 나간 날짜]"],
   close: ["올해는 기체 설계, 제작이랑 같이 부원들이 직접 조종하고 만들어 볼 수 있는 교육에 신경 썼습니다.", "이제 선배님들 이야기 듣고 싶습니다. 화면 주제는 참고만 해 주시고 편하게 말씀해 주시면 됩니다. 감사합니다."]
